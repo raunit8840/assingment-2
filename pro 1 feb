@@ -1,0 +1,895 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "688ddc92-e66a-495b-acbe-2e27b91ac5e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d = {}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "3e1f1015-3aa7-44fb-9fb0-fe8505385b8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "69bc184b-2759-4ef5-bc73-22ca3a829a7d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d1 ={'key': \"sudh\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "b6bcd38e-c05a-46f8-9f53-2722ced9e664",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'key': 'sudh'}"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "178b894d-8489-4c1f-8f1d-af70c12c2992",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d2 ={'name': 'raunit', 'email':'raunitn@gmail.com','number':'8840958016'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "d4190b27-9af6-42f4-bb96-3d532109e998",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'raunit', 'email': 'raunitn@gmail.com', 'number': '8840958016'}"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "8db69daf-fd5c-48b0-a803-b68abed3f8b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d3 = {234:'sudh','_wer':'kumar',True:24231}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "4f180898-cc94-4cd5-86aa-6b25a4554e66",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{234: 'sudh', '_wer': 'kumar', True: 24231}"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "51c19859-07a8-4d9a-98a0-d19064779a4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sudh'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d3[234]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "30df3ac1-fb22-42fb-a2be-70c2268800af",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "24231"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d3[True]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "22bb8bbf-dbbd-48f0-bc44-2c20ec0f3058",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "24231"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d3[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "7e4e4cfb-b44d-4058-b3df-5556d0898a38",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d4= {'name':'sudh','mail':'raunitn@gamil.com','name':'raunit' }"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "48da3634-d65f-4300-adae-4caf7f2f3bcd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'raunit'"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d4['name']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "aff44aed-6906-4827-8e4c-9ad74c2e5a3d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d5 ={'compny':'pwskill','course':['web dev','data science','java with dsa system desgien']}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "6a8402af-6932-4412-826c-67227e73cea7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'compny': 'pwskill',\n",
+       " 'course': ['web dev', 'data science', 'java with dsa system desgien']}"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "d95081a6-2cb7-48ee-9b68-ed7c7bb65607",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['web dev', 'data science', 'java with dsa system desgien']"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d5['course']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "c671cd26-7788-4a63-a24a-3ea96c62cfea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'java with dsa system desgien'"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d5['course'][2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "fb8c3164-5079-459e-890f-410bfde2c936",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d6 = {'number':[2,23,3,34,34],'assingment':(1,2,3,4,5,6),'launch_date':{28,12,14},'class_time':{'web_dev':8,'data science masters':8,'java with dsa and system desgien':7}}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5a3e4521-a69d-47b1-8d15-ce4e30172459",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'number': [2, 23, 3, 34, 34],\n",
+       " 'assingment': (1, 2, 3, 4, 5, 6),\n",
+       " 'launch_date': {12, 14, 28},\n",
+       " 'class_time': {'web_dev': 8,\n",
+       "  'data science masters': 8,\n",
+       "  'java with dsa and system desgien': 7}}"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "903f185c-2e3a-4b1b-a457-4804597da299",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6['class_time']['java with dsa and system desgien']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "d6545f38-8e43-45a3-80f4-7c413a0a23ad",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d6['mentor']= ['shudhanshu','krish']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "6aa71a24-14b3-49cd-bc9c-4c238693018e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'number': [2, 23, 3, 34, 34],\n",
+       " 'assingment': (1, 2, 3, 4, 5, 6),\n",
+       " 'launch_date': {12, 14, 28},\n",
+       " 'class_time': {'web_dev': 8,\n",
+       "  'data science masters': 8,\n",
+       "  'java with dsa and system desgien': 7},\n",
+       " 'mentor': ['shudhanshu', 'krish']}"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "ca087322-047e-4e74-bb65-cd8d663d1b45",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del d6['number']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "b347ed1f-e5eb-4939-a892-46f410d1d269",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'assingment': (1, 2, 3, 4, 5, 6),\n",
+       " 'launch_date': {12, 14, 28},\n",
+       " 'class_time': {'web_dev': 8,\n",
+       "  'data science masters': 8,\n",
+       "  'java with dsa and system desgien': 7},\n",
+       " 'mentor': ['shudhanshu', 'krish']}"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "3e9aff2f-432e-4990-9186-a3af0aa7d907",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['assingment', 'launch_date', 'class_time', 'mentor']"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list (d6.keys())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "3020bf72-d8ab-470b-801b-00f84e2b4a8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_values([(1, 2, 3, 4, 5, 6), {28, 12, 14}, {'web_dev': 8, 'data science masters': 8, 'java with dsa and system desgien': 7}, ['shudhanshu', 'krish']])"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(d6.values())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "829530e4-2205-4750-8126-a2b87a82e853",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('assingment', (1, 2, 3, 4, 5, 6)),\n",
+       " ('launch_date', {12, 14, 28}),\n",
+       " ('class_time',\n",
+       "  {'web_dev': 8,\n",
+       "   'data science masters': 8,\n",
+       "   'java with dsa and system desgien': 7}),\n",
+       " ('mentor', ['shudhanshu', 'krish'])]"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(d6.items())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "bb821933-456a-4df0-9a46-5e887629dfab",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'number': [2, 23, 3, 34, 34],\n",
+       " 'assingment': (1, 2, 3, 4, 5, 6),\n",
+       " 'launch_date': {12, 14, 28},\n",
+       " 'class_time': {'web_dev': 8,\n",
+       "  'data science masters': 8,\n",
+       "  'java with dsa and system desgien': 7},\n",
+       " 'mentor': ['shudhanshu', 'krish']}"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "3f37e4cf-ff49-4b5c-ba65-726c001f3448",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(1, 2, 3, 4, 5, 6)"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d6.pop('assingment')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d5480ad0-ec14-418f-8d71-ee9f2891e10b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter price  500\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i will purchase\n"
+     ]
+    }
+   ],
+   "source": [
+    "price = int(input(\"enter price \"))\n",
+    "if price > 1000:\n",
+    "    print(\" i will not purchase\")\n",
+    "else : \n",
+    "    print(\"i will purchase\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "58e05aaf-5ddf-441a-a98b-68fbadb7afb5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter price  1500\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " i will not purchase\n",
+      "its ok \n"
+     ]
+    }
+   ],
+   "source": [
+    "price = int(input(\"enter price \"))\n",
+    "if price > 1000:\n",
+    "    print(\" i will not purchase\")\n",
+    "    if price > 5000:\n",
+    "        print(\"this is too much \")\n",
+    "    elif price < 2000:\n",
+    "        print(\"its ok \")\n",
+    "elif price < 1000:\n",
+    "            print(\"i will pirchase\")\n",
+    "else:\n",
+    "    print(\"not inserted\")\n",
+    "            \n",
+    "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "ebe65f76-ee8e-4cd7-bb76-22a86008cab8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l = [1,2,3,4,5,6,7,8,9,]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "cc893445-0289-46bb-ac3d-39fabbd68150",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[0]+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "6ff0bb40-7855-4f20-a16d-a304d803fac6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1=[]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "b13a01a8-135b-4454-b05a-0e3a7077ec80",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[]"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "3c498772-5afc-411b-b546-fb64a321dc5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "96fa5890-0d9b-4802-bed9-32981af43475",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1=[]\n",
+    "for i in l:\n",
+    "    print(i+1)\n",
+    "    l1.append(i+1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "3936d8bb-a35d-47a6-9ed2-4f8dd5a4c98e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 4, 5, 6, 7, 8, 9, 10]"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "0846d3ab-448c-4f17-8a9e-324a17966871",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l = [ 'sudh','kumar','pwskills','course']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "932014d4-fda7-4c23-804a-cec863ddf2d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sudh\n",
+      "kumar\n",
+      "pwskills\n",
+      "course\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1=[]\n",
+    "for i in l :\n",
+    "    print(i)\n",
+    "    l1.append(i.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "445a230d-4b3b-497c-b028-2f6c8b5297f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['SUDH', 'KUMAR', 'PWSKILLS', 'COURSE']"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "6853de8f-f272-42fd-8ce8-43d6528c54b1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l =[1,2,3,4,5,'sudh','kumar',324,34,456,'abc']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "43a49aed-53ee-4ee4-b52b-46fccf845094",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1_num = []\n",
+    "l2_str = []\n",
+    "for i in l :\n",
+    "    if type(i) == int or type(i) == float:\n",
+    "        l1_num.append(i)\n",
+    "    else :\n",
+    "        l2_str.append(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "33eabf30-51b0-4911-833a-c4069c3681ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5, 324, 34, 456]"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1_num"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "f3348ac0-260d-4a70-a21a-cafebaac21be",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['sudh', 'kumar', 'abc']"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2_str"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f2134135-6e60-48ac-b552-0f5599a6cd20",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
